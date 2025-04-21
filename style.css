@@ -1,0 +1,682 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --yellow: #ffb300;
+}
+::selection{
+    background-color: var(--yellow);
+}
+.pagestart{
+    background-color: var(--yellow);
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.subscribebutton{
+    width: 90px ;
+    height: fit-content;
+    justify-content: space-between;
+    display: flex;
+    margin-right: 50px;
+    background-color: white;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    box-shadow: 0px 1px 7px #00000070;
+    background-color: white;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.navlist{
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+a:hover{
+    color: var(--yellow);
+}
+.zohaibname{
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+.introparagraph span{
+    color: var(--yellow);
+}
+.introparagraph{
+    font: 20px bold;
+}
+.mainbody{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.021);
+    /* border: 1px solid green; */
+    overflow-x: hidden;
+}
+.myintropage{
+    display: flex;
+    flex-direction: column;
+    width: 57%;
+    justify-content: center;
+    font-size: 25px;
+    line-height: 1.6;
+    gap: 20px;
+    padding: 20px 0px;
+
+    
+}
+.laravalpage{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    line-height: 2.3;
+}
+.laravalpic{
+    width: 400px;
+    height: 225px;
+    /* border:  1px solid red; */
+}
+.headingslist{
+    list-style-type: none; 
+    display: flex; 
+    font-size: 30px; 
+    gap: 20px;
+}
+.headingslist a{
+    text-decoration: none;
+    color: var(--yellow);
+}
+.timeanddate{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+.timeanddate a{
+    opacity: 0.5;
+}
+.h1borderstyling::after{
+    content: '';
+    width: 700px;
+    color: var(--yellow);
+    display: flex;
+    border: 2px solid var(--yellow);
+    transform: translateY(-20px);    
+}
+.latestpostpage{
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+.card{
+    width: 385px;
+    height: 434px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px black;
+}
+.cardcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+.cardcontent h3{
+    color: var(--yellow);
+    font-weight: bolder;
+}
+.cardcontent p{
+    opacity: 0.7;
+}
+.workingcard1heading::after{
+    content: '';
+    display: flex;
+    border: 3px solid var(--yellow);
+    width: 190px;
+}
+.lateststreampage{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    
+}
+.card3listheadings{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+.streamcard{
+   
+    width: 385px;
+    height: 380px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px black;
+
+}
+.bikepage{
+    width: 57%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+}
+.bikepage p{
+    font-size: 26px;
+    line-height: 1.6;
+}
+.threeboxes{
+    display: flex;
+    justify-content: space-between;
+}
+.distancebox{
+    width: 200px;
+    height: 100px;
+    /* border: 1px solid green; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
+}
+.nmbrscolor{
+    color: var(--yellow);
+}
+.flags li{
+    width: 50px;
+    height: fit-content;
+    /* border: 1px solid yellow; */
+}
+.flags{
+    margin: 20px 0px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    /* border: black 1px solid; */
+}
+.copyrightline{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.icons {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+.contacts{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+.news{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+.contactinfoline{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    opacity: 0.5;
+    padding: 50px 0px 50px 0px;
+    margin: 0px 40px 0px 40px;
+    line-height: 30px;
+}
+.usespage{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    background-color: rgba(0, 0, 0, 0.021);
+    
+}
+.usescontent{
+    width: 57%;
+    /* border: yellow solid 1px; */
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    line-height: 1.8;  
+}
+.usescontent ul li{
+    margin-left: 50px;
+    list-style-type: square;
+    opacity: 0.8;
+
+}
+.usescontent a{
+    border-bottom: 2px dashed var(--yellow);
+    font-weight: bold;
+    opacity: 1;
+}
+.mainreumepage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.021);
+}
+.mainresumebox{
+    width: 57%;
+    margin-top: 50px;
+    
+}
+.resumeboxes{
+    /* width: 100%; */
+    /* border: 2px solid yellow; */
+    background-color: white;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0,0.21);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hospitablemainbox{
+    display: flex; 
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.068);
+    gap: 10px;
+    line-height: 1.4;
+    padding-bottom: 20px;
+}
+.headinghospitable{
+    display: flex; 
+    justify-content: space-between;
+}
+.headinghospitable i{
+    color: var(--yellow);
+    font-size: 30px;
+}
+.softwareeng{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.6;
+}
+.krakenbox{
+    opacity: 0.5;
+
+}
+.tablecontent{
+    opacity: 0.5;
+}
+.hactoberpage{
+    padding: 50px 0px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 1.8;
+}
+.hactoberpage a{
+    border-bottom: 1px dashed var(--yellow);
+    width: fit-content;
+}
+.firstcard{
+    width: 277px;
+    height: 200px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    overflow: hidden;
+    line-height: 1.5;
+    margin-left: 25px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0,0.21);
+}
+.firstcard h4,p{
+    margin-left: 10px;
+}
+.fivecardsmain{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.021);
+    padding-bottom: 50px;
+}
+.maincharitybody{
+    background-color: rgba(0, 0, 0, 0.021);
+    padding-bottom: 50px;
+}
+.charitybox{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+.charitypage{
+    width: 57%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    line-height: 1.2;
+}
+.firstcharitycard{
+    width: 270px;
+    height: 170px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.226);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.firstcharitycard img{
+    width: 270px;
+    height: 150px;
+}
+.firstcharitycard a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.firstcharitycard a figcaption{
+    opacity:0.5;
+}
+.firstcharitycard a:hover{
+    color: black;
+}
+.charitycards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 320px){
+    .pagestart{
+        font-size: 10px;
+        
+    }
+    .pagestart p{
+        margin-top: 10px;
+    }
+    .pagestart span{
+        opacity: 0;
+    }
+    .navbar{
+        flex-direction: column;
+        
+    }
+    .navlist{
+        gap: 15px;
+        margin: 0px 10px;
+        font-size: 10px;
+    }
+    
+    .zohaibname{
+        font-size: 25px;
+    }
+    .usescontent{
+        width: 100%;
+        font-size: 15px;
+        margin: 0px 10px;
+        
+    }
+    .copyrightline{
+        flex-direction: column;
+        font-size: 14px;
+    }
+    .copyrightline p{
+        margin-left: 0px;
+
+    }
+    .contactinfoline{
+        font-size: 13px;
+        flex-direction: column;
+    }
+    .contacts{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+}
+@media screen and (max-width: 727px) {
+    .pagestart{
+        font-size: 10px;
+        
+    }
+    .pagestart p{
+        margin-top: 10px;
+    }
+    
+    .navlist{
+        gap: 15px;
+        margin: 0px 10px;
+        font-size: 15px;
+    }
+    
+    .zohaibname{
+        font-size: 25px;
+    }
+    .usescontent{
+        width: 100%;
+        font-size: 15px;
+        margin: 0px 10px;
+        
+    }
+    .copyrightline{
+        font-size: 14px;
+    }
+    .copyrightline p{
+        margin-left: 0px;
+
+    }
+    .contactinfoline{
+        font-size: 13px;
+    }
+    .contacts{
+        gap: 0px;
+    }
+
+    
+}
+@media screen and (max-width:551px) {
+    .pagestart{
+        font-size: 10px;
+        
+    }
+    .pagestart p{
+        margin-top: 10px;
+    }
+    .pagestart span{
+        opacity: 0;
+    }
+    .navbar{
+        flex-direction: column;
+        
+    }
+    .navlist{
+        gap: 15px;
+        margin: 0px 10px;
+        font-size: 10px;
+    }
+    
+    .zohaibname{
+        font-size: 25px;
+    }
+    .usescontent{
+        width: 100%;
+        font-size: 10px;
+        margin: 0px 10px;
+        
+    }
+    .copyrightline{
+        flex-direction: column;
+        font-size: 14px;
+    }
+    .copyrightline p{
+        margin-left: 0px;
+
+    }
+    .contactinfoline{
+        font-size: 13px;
+        flex-direction: column;
+    }
+    .contacts{
+        flex-direction: column;
+        gap: 0px;
+    }
+    
+}
+@media screen and (max-width: 1024px) {
+    .usescontent{
+        width: 100%;
+        font-size: 25px;
+        margin: 0px 10px;
+        
+    }
+    .contactinfoline{
+        font-size: 20px;
+    
+    }
+    .copyrightline{
+        font-size: 25px;
+    }
+    .navlist{
+        gap: 15px;
+        margin: 0px 10px;
+    
+    }
+    
+    .zohaibname{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 824px){
+    .navlist{
+        gap: 15px;
+        margin: 0px 10px;
+        font-size: 15px;
+    }
+    .zohaibname{
+        font-size: 25px;
+    }
+    .pagestart{
+        font-size: 15px;
+        
+    }
+    .copyrightline{
+        font-size: 14px;
+    }
+    .copyrightline p{
+        margin-left: 0px;
+
+    }
+    .contactinfoline{
+        font-size: 13px;
+    }
+    .contacts{
+        gap: 0px;
+    }
+
+}
+/* Jaava script css start here */
+.search{
+    /* border: 1px solid red; */
+    height: 50px;
+    position: relative;
+    left: -120px;
+    display: flex;
+    align-items: center;
+}
+.input{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-color: var(--yellow);
+    border: 0;
+    background-color: var(--yellow);
+    border-radius: 10px;
+    padding: 0px 5px;
+    transition: width 0.5s linear;
+    /* box-shadow: -7px 1px 7px #00000070; */
+}
+.srchbtn{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 0;
+    font-size: 24px;
+    background-color: var(--yellow);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s linear;
+    /* box-shadow: 6px 1px 7px #00000070; */
+
+}
+.search.active .input{
+    width: 200px;
+}
+.search.active .srchbtn{
+    transform: translateX(184px);
+}
+.srchbtn:focus,
+.input:focus{
+    outline: none;
+}
+.input::placeholder{
+    color: white;
+    font-size: 16px;
+}
+
+.card.cardeffect{
+    transform: translateX(0);
+    transition: transform 1s ease;
+}
+.streamcard.cardeffect{
+    transform: translateX(0);
+    transition: transform 1s ease;
+}
+.streamcard {
+    transform: translateX(400%);
+}
+.card{
+    transform: translateX(-400%);
+}
+.laravalpic{
+    transform: translateX(-400%);
+    transition: transform 1s ease;
+}
+.laravalpic.cardeffect{
+    transform: translateX(0);
+}
